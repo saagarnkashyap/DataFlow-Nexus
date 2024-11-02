@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataFlow Nexus Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="C:\Users\chava\OneDrive\Desktop\SE\final website\logo.png" alt="DataFlow Nexus Logo" id="logo">
+            <h1>Welcome to DataFlow Nexus Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">What We Do</a></li>
+                    <li><a href="#upload">Upload Data</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#why">Why DataFlow Nexus</a></li>
+                    <li><a href="login.html" class="sign-out">Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="content">
+                <h2>What is DataFlow Nexus?</h2>
+                <p>
+                    DataFlow Nexus is a cutting-edge platform that enables businesses to analyze their sales data with ease. Our tools allow for trend discovery, seasonal pattern identification, and product performance analysis using industry-standard libraries like Pandas, Matplotlib, and Seaborn. 
+                </p>
+                <p>
+                    With actionable insights derived from data analysis, businesses can make smarter decisions about marketing strategies, inventory management, and resource allocation, resulting in higher profitability and streamlined operations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Our Vision</h2>
+            <p>At DataFlow Nexus, our vision is to empower businesses with clear, concise, and accurate sales analysis so they can make data-driven decisions. We believe data holds the key to unlocking smarter business strategies.</p>
+        </div>
+    </section>
+
+    <section id="upload">
+        <div class="container">
+            <h2>Upload Sales Data for Analysis</h2>
+            <form id="upload-form">
+                <label for="file-upload">Upload Excel File</label>
+                <input type="file" id="file-upload" accept=".xls, .xlsx" required>
+                <button type="submit">Upload & Analyze</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="results">
+        <div class="container">
+            <h2>Data Analysis Results</h2>
+            <img src="https://via.placeholder.com/800x400.png?text=Sales+Data+Visualization" id="analysis-image" alt="Sales Data Visualization" style="display:none;">
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="container">
+            <h2>Why DataFlow Nexus?</h2>
+            <p>
+                Our platform stands out because it not only provides top-notch data analytics capabilities, but also offers an automated solution to improve your business's performance. Here’s why you should choose us:
+            </p>
+            <ul>
+                <p><strong>Automated Insights:</strong> Speed up decision-making with automatic data analysis.</p>
+            <p><strong>Advanced Visualizations:</strong> Visualize data using beautiful charts and graphs.</p>
+            <p><strong>Customized Solutions:</strong> We tailor the analysis to fit your business needs.</p>
+            <p><strong>Accurate Forecasting:</strong> Improve future sales predictions and inventory management.</p>
+            </ul>
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/data_analyticstrendsmin.jpg" alt="Why DataFlow Nexus">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Developed by DataFlow Nexus - <a href="https://www.linkedin.com/in/saagar-n-kashyap-7231ab206" target="_blank">Saagar Kashyap</a> | <a href="https://www.linkedin.com/in/lokesh-chavali-610334258" target="_blank">Lokesh Chavali</a></p>
+            <p>Contact: 8688343933 | 9945372427 | <a href="mailto:saagarcourses@gmail.com">saagarcourses@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            setTimeout(function() {
+                document.getElementById('analysis-image').style.display = 'block';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
